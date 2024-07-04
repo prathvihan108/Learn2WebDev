@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            padding: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(97, 223, 223);
+            width: 80vw;
+            height: auto;
+            max-height: auto;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+
+        }
+
+        .image {
+
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image img {
+          
+            max-width: 100%;
+            height: auto;
+            /* Maintain image aspect ratio */
+            max-height: 150px;
+            /* Set maximum height for the image */
+        }
+
+        .captions {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+
+
+
+        }
+
+        .captions span {
+            display: block;
+            margin: 10px;
+            border: 1px solid green;
+            border-radius: 4px;
+
+
+
+
+
+        }
+
+        .info {
+            background-color: azure;
+            margin: 10px;
+            max-width: 100%;
+            /* Maximum width for the .info div */
+            max-height: 250px;
+            /* Maximum height for the .info div */
+            overflow: hidden;
+          
+            text-overflow: ellipsis;
+            /* Display ellipsis (...) for overflowed text */
+            word-wrap: break-word;
+            /* Wrap long words to the next line */
+            border: 1px solid wheat;
+            border-radius: 10px;
+         
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="image">
+            <img src="img4.jpg" alt="nature">
+
+
+        </div>
+        <div class="captions ">
+            <span>Nature</span>
+            <span>Love</span>
+
+        </div>
+        <div class="info">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos,
+                repellat. Eligendi soluta ab similique facilis excepturi repudiandae,
+                ipsa aliquam! Autem aliquam totam odit enim provident!
+              
+
+            </p>
+
+
+        </div>
+        <div class="info">
+            Read more
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
