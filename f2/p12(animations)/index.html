@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+    
+        width: 80vw;
+        height: 40px;
+        align-items: center;
+ 
+        background-color: aqua;
+    }
+    .box{
+        animation: myAnimation1 2s ease-in-out 1s infinite forwards,
+        myAnimation2 2s ease-in-out 1s infinite forwards;
+        width: 10vw;
+        height: 10px;
+        background-color: black;
+    
+    }
+    @keyframes myAnimation1 {
+        from{
+            transform: translate(0vw);
+            background-color: black;
+
+
+        }
+        to{
+            transform:  translate(70vw);
+            background-color: aliceblue;
+
+        }
+
+        
+    }
+
+    @keyframes myAnimation2 {
+        0%{
+            opacity: 0;
+        }
+        30%{
+            opacity: 0.3;
+        }
+        60%{
+           opacity: 0.6;
+        }
+        90%{
+            opacity: 0.9;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

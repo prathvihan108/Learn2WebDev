@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            margin: 10px;
+        }
+        .box::first-line{
+            color: aqua;
+        }
+        .box:first-child::selection{
+            background-color: brown;
+        }
+        .box::first-letter{
+            font-size: 40px;
+        }
+        .boxes::before{
+            content: "hello";
+        }
+        .boxes::after{
+            content: "hello";
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="boxes">
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste, eius tenetur consectetur doloremque obcaecati earum suscipit officia sit molestias nobis aperiam, rerum unde delectus error, nemo mollitia inventore amet. Soluta natus repudiandae minus odio voluptas nam, vero omnis unde ipsum. Eveniet iste voluptates rerum.
+        </div>
+        
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quibusdam, ipsum laboriosam qui consequuntur a quae. Pariatur iusto necessitatibus deserunt natus voluptatem aperiam odit laudantium, ut quod tempora illum repellat, magnam dolore! Numquam possimus blanditiis dolor voluptatem ut. Aut, similique. Illo error quisquam inventore cum!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugiat, alias in dolorem enim quasi delectus officiis aut earum saepe sit cum aspernatur doloremque voluptate voluptatibus sint eveniet, vero asperiores ex perferendis, mollitia officia vitae ab. Sint tenetur expedita possimus maiores mollitia harum similique animi?
+        </div>
+        
+    </div>
+    
+</body>
+</html>

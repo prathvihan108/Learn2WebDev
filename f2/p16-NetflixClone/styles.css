@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(255, 0, 0)
+
+}
+@media (max-width:1550px){
+    .main{
+      
+       
+        position: relative;
+        padding: 5px;
+    
+        height: fit-content;
+        background-image: url(assets/images/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      
+        border-width: 5px;
+
+  
+        
+       
+    }
+    
+    .main .box{
+        position:absolute;
+        top: 0px;
+        opacity: 0.55;
+        height: 100%;
+     
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+      
+    
+    }
+    .logo{
+        width: 144px;
+        color: red;
+        position: relative;
+        z-index: 10;
+    }
+    
+    
+    
+    
+    .nav{
+        position: relative;
+        top: 15px;
+     
+        display: flex;
+    
+        width: 80vw;
+        margin: auto;
+       
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav button:nth-child(1){
+        position: relative;
+        z-index: 10;
+        padding: 8px 12px;
+        width: fit-content;
+        font-size: medium;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: white;
+        font-weight: 900;
+        border-color: rgb(102, 101, 101);
+        border-width: 1px;
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    .nav button:nth-child(2){
+        position: relative;
+        z-index: 10;
+        padding: 8px 12px;
+        width: fit-content;
+        font-size: medium;
+        background-color: red;
+        color: white;
+        font-weight: 900;
+        border: none;
+        border-radius: 5px;
+    
+    
+    }
+
+    .content{
+        margin-top: 15%;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        gap: 20px;
+        
+
+
+      
+    }
+     .buttons{
+        display: flex;
+        position: relative;
+        z-index: 10;
+     
+        text-align: center;
+
+        justify-content: center;
+        margin-top: 5%;
+     
+   
+        gap: 10px;
+
+
+    }
+    .content div:first-child{
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        text-align: center;
+       
+    }
+    .content div{
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+
+    } 
+
+    .buttons :first-child{
+        position: relative;
+        z-index: 10;
+        padding: 20px 200px 20px 10px;
+
+        background-color: rgba(0, 0, 0, 0.486);
+       
+        font-weight: 400;
+        border-color: rgb(145, 137, 137);
+        border-width: 1px;
+        border-radius: 5px;
+        font-size: large;
+        color: rgb(255, 255, 255);
+
+      
+      
+       
+    
+      
+    
+    }
+    .buttons :nth-child(2){
+        position: relative;
+        z-index: 10;
+        padding: 10px 20px 10px 20px;
+        width: fit-content;
+        font-size: x-large;
+        background-color: red;
+        color: white;
+        font-weight: 900;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+}
+
+
+@media (max-width: 680px) {
+    /* body {
+        background-size: max(10400px,100vw) ;
+    } */
+    .main{
+        height: fit-content;
+        background-size:cover;
+    }
+    .main .box{
+        height: 100%;
+       
+      
+    }
+
+    .logo{
+        width:100px;
+    }
+    .nav button:nth-child(1){
+        font-size: small;
+   
+    
+    
+    }
+    
+    
+    .nav button:nth-child(2){
+       font-size: small;
+   
+    
+    
+    }
+
+ 
+     .buttons{
+        flex-direction: column;
+      
+      
+        align-items: center;
+   
+
+   
+   
+
+
+    }
+    .content div:first-child{
+        font-size: 2rem;
+
+
+      
+       
+    }
+    .content div{
+        font-size: 1.0rem;
+     
+
+    } 
+
+    .buttons :first-child{
+    
+
+
+        padding: 10px 30px 10px 5px;
+        font-size: medium;
+        color: rgb(241, 241, 241);
+
+      
+      
+       
+    
+      
+    
+    }
+    .buttons :nth-child(2){
+        position: relative;
+        z-index: 10;
+        padding: 10px 20px 10px 20px;
+        width: fit-content;
+        font-size: large;
+        background-color: red;
+        color: white;
+        font-weight: 900;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+  
+}
+
+
+
+

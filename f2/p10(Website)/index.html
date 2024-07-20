@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      padding: 10px;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav ul li {
+      margin: 18px;
+
+    }
+
+    .nav ul li:hover {
+      color: rgb(0, 7, 112);
+
+    }
+
+    .downloadSection {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 20px; /* Reduce gap for mobile */
+      justify-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+
+@media (min-width: 768px) {
+  .downloadSection {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .downloadSection {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on desktops */
+  }
+}
+
+    .item {
+      padding: 10px;
+      width: auto;
+      height: auto;
+      /* background-color: brown; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .downloadSection div button {
+      width: auto;
+      height: auto;
+      margin: 5px;
+      background-color: green;
+
+      padding: 8px;
+      border-radius: 10px;
+   
+    }
+
+    .downloadSection div button:first-child {
+      background-color: aqua;
+
+    }
+
+    .longText {
+      margin: 5px;
+      font-size: large;
+
+    }
+
+    .subText {
+      margin: 5px;
+      color: grey;
+      font-size: small;
+
+    }
+
+    .logo{
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+
+      <img class="logo" src="logo1.webp" height="60" width="180">
+
+      <ul>
+
+        <li>Products
+          <span><svg width="10px" height="10px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+            </svg></span>
+
+        </li>
+        <li>Prising
+          <span><svg width="10px" height="10px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+            </svg></span>
+        </li>
+        <li>Resources
+          <span><svg width="10px" height="10px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+            </svg></span>
+        </li>
+        <li>About us
+          <span><svg width="10px" height="10px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+            </svg></span>
+        </li>
+        <li>Security and complience
+          <span><svg width="10px" height="10px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+            </svg></span>
+        </li>
+        <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"></li>
+
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+    <section class="downloadSection">
+      <div class="item">
+        <div class="longText">English</div>
+        <div class="subText">sub</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">Deutsch</div>
+        <div class="subText">German</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">Italiano</div>
+        <div class="subText">Italian</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">Español</div>
+        <div class="subText"> Spanish</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">français</div>
+        <div class="subText">French</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">Português brasileiro</div>
+        <div class="subText">Brazilian Portuguese</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">日本</div>
+        <div class="subText">Japanese</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">한국어</div>
+        <div class="subText">Korean</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">中国</div>
+        <div class="subText">Chinese</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="longText">中國</div>
+        <div class="subText">Traditional Chinese</div>
+        <div>
+
+          <button>Downlaod 32-bit</button>
+          <button>Downlaod 64-bit</button>
+        </div>
+      </div>
+
+
+
+
+   
+      
+   
+
+
+
+    </section>
+  </main>
+
+</body>
+
+</html>

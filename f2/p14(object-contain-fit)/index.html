@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container1{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 10px;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 5px;
+            /* object-fit: contain; */
+           
+            /* crops the image */
+            object-fit: cover;  
+            object-position: top right;
+            
+
+        }
+        /* Imgage background */
+        .container2{
+
+            
+           width: 200px;
+           height: 200px;
+            margin: 10px;
+            background-image: url(https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png);
+
+            /* background-size works similar to object fit */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg" alt="img" class="img">
+    </div>
+    <div class="container2">
+     
+    </div>
+</body>
+</html>
